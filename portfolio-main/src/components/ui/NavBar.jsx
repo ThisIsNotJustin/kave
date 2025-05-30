@@ -4,6 +4,8 @@ import Lenis from "@studio-freight/lenis";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import kave from "/src/assets/icons/Navbar/kave-logo.png";
+
 export default function NavBar({ sectionRefs }) {
   const navBar = useRef(null);
   const logo = useRef(null);
@@ -64,7 +66,7 @@ export default function NavBar({ sectionRefs }) {
     >
       {/* logo */}
       <a href="#hero" aria-label="Logo" className="z-50">
-        <img src="/src/assets/icons/Navbar/kave-logo.png" alt="Logo" width="60" height="45" />
+        <img src={kave} alt="Logo" width="60" height="45" />
       </a>
       <nav className=" space-x-7 font-grotesk text-body-3 sm:block">
         <a href="#about" className="group relative hidden md:inline-block">

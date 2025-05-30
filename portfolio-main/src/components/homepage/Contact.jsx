@@ -44,11 +44,12 @@ export default function Contact() {
       aria-label="contact me"
     >
       
-      
-      <Heading title="Contact" />
+      <div ref={heading}>
+        <Heading title="contact" />
+      </div>
       <div ref={contactSection} className="mt-10 flex flex-col gap-20 md:grid md:grid-cols-6 md:px-12">
         <div className="col-span-4">
-          <h4 className="text-body-1 2xl:text-4xl font-semibold pt-4 text-center justify-center md:items-start md:justify-start md:text-left">BUSINESS HOURS</h4>
+          <h3 className="text-body-1 2xl:text-4xl font-semibold pt-4 text-center justify-center md:items-start md:justify-start md:text-left">BUSINESS HOURS</h3>
         <div className="bg-green-950 py-8 rounded-xl flex shadow-lg text-center h-5/6 w-full max-w-screen-lg flex-col justify-center opacity-75">
           <div className="relative flex items-center justify-center h-full">
             <p className="text-secondary-300 text-body-3">
